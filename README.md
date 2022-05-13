@@ -1,17 +1,17 @@
 # ProjectFin
 
-##### Res:
-###### Source:
+## Resouces:
+### Source:
 https://fonts.google.com/icons?icon.style=Rounded 
 
-###### Settings:
+### Settings:
 Fill: 0
 Weight: 200
 Grade: -25
 Optical size: 48
 
-##### Components:
+## Components:
 Folder and Package for all Project Components
 
-###### Basic:
+### Basic:
 Most basic Components.
