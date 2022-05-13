@@ -1,11 +1,12 @@
 package components.formwindow;
 
-import components.basic.Frame;
+import components.main.FrameMain;
 
-public class FrameTest extends Frame {
+public class FrameTest extends FrameMain {
     
     public FrameTest() {
         initComponents();
+        this.loadConfig();
     }
     
     @SuppressWarnings("unchecked")
@@ -13,18 +14,16 @@ public class FrameTest extends Frame {
     private void initComponents() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocation(new java.awt.Point(200, 200));
-        setLocationRelativeTo(null);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 911, Short.MAX_VALUE)
+            .addGap(0, 400, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 657, Short.MAX_VALUE)
+            .addGap(0, 300, Short.MAX_VALUE)
         );
 
         pack();
