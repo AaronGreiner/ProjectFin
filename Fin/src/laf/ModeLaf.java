@@ -1,5 +1,5 @@
 package laf;
 
-public enum LafMode {
+public enum ModeLaf {
     DARK, LIGHT
 }

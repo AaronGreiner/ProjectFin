@@ -6,14 +6,14 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.plaf.basic.BasicLookAndFeel;
 import laf.DarkLaf;
-import laf.LafMode;
+import laf.ModeLaf;
 import laf.LightLaf;
 
 public class ConfigLaf {
     
     private BasicLookAndFeel laf;
     
-    public void setLaf(LafMode mode) {
+    public void setLaf(ModeLaf mode) {
         
         switch (mode) {
             case DARK:

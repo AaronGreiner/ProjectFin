@@ -8,6 +8,8 @@ import org.ini4j.Ini;
 
 public class ConfigFile {
     
+    public Boolean configNewCreated = false;
+    
     private Boolean configLoaded = false;
     private final String config_filename = "fin_config.ini";
     private File ini_file;
@@ -21,12 +23,12 @@ public class ConfigFile {
     private final String window_pos_y = "pos_y";
     private final String window_title = "title";
     
-    public int value_window_state = 0;
-    public int value_window_width = 900;
-    public int value_window_height = 600;
-    public int value_window_pos_x = 0;
-    public int value_window_pos_y = 0;
-    public String value_window_title = "ProjectFin";
+    public int value_window_state;
+    public int value_window_width;
+    public int value_window_height;
+    public int value_window_pos_x;
+    public int value_window_pos_y;
+    public String value_window_title;
     
     public void load(Boolean forceReload) {
         
@@ -34,7 +36,10 @@ public class ConfigFile {
             
             try {
                 ini_file = new File(System.getProperty("user.dir") + System.getProperty("file.separator") + config_filename);
-                ini_file.createNewFile();
+                
+                if (ini_file.createNewFile() && !configNewCreated) {
+                    configNewCreated = true;
+                }
                 
                 ini = new Ini(ini_file);
                 read();
