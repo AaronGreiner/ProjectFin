@@ -1,6 +1,6 @@
 # ProjectFin
 
-## Resouces:
+## Resources:
 ### Source:
 https://fonts.google.com/icons?icon.style=Rounded 
 
