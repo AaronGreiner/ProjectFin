@@ -9,7 +9,7 @@ public class Main {
     
     public static void main(String[] args) {
         
-        Config.LAF.setLaf(ModeLaf.DARK);
+        Config.LAF.setLaf(ModeLaf.LIGHT);
         
         FrameTest frame = new FrameTest();
         
